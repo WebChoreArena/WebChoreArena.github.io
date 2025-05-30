@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="WebChoreArena is a platform for evaluating web browsing agents on realistic tedious web tasks.">
+  <meta name="keywords" content="Web Browsing Agent, Benchmark">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>
+    WebChoreArena: Evaluating Web Browsing Agents on Realistic Tedious Web Tasks</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +33,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/WebChoreArena-kun.jpg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -50,36 +51,6 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </nav>
 
 
@@ -88,32 +59,48 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">WebChoreArena: Evaluating Web Browsing Agents on Realistic Tedious Web Tasks</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://atsumiyai.github.io/">Atsuyuki Miyai</a>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              Zaiying Zhao,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://www.sri.inf.ethz.ch/people/kazuki">Kazuki Egashira</a>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://atsukisato.github.io/">Atsuki Sato</a>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              Tatsumi Sunada,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://www.linkedin.com/in/shota-onohara/"> Shota Onohara</a>,
+            </span>
+            <span class="author-block">
+              Hiromasa Yamanishi,
+            </span>
+            <span class="author-block">
+              Mashiro Toyooka,
+            </span>
+            <span class="author-block">
+              Kunato Nishina,
+            </span>
+            <span class="author-block">
+              Ryoma Maeda,
+            </span>
+            <br>
+            <span class="author-block">
+              <a href="https://scholar.google.co.jp/citations?user=CJRhhi0AAAAJ&hl=en">Kiyoharu Aizawa</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.jp/citations?hl=ja&user=rE9iY5MAAAAJ&view_op=list_works">
+                Toshihiko Yamasaki</a>
             </span>
           </div>
-
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block">The University of Tokyo</span>
           </div>
 
           <div class="column has-text-centered">
@@ -121,7 +108,7 @@
               <!-- PDF Link. -->
               <span class="link-block">
                 <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
+                  class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
@@ -130,42 +117,23 @@
               </span>
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
+                  class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/WebChoreArena/WebChoreArena"
+                  class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
           </div>
@@ -178,73 +146,11 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+      <img src="./static/images/teaser.png" alt="teaser" style="max-width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        The WebChoreArena challenge. WebChoreArena extends WebArena by introducing
+more complex and labor-intensive tasks, pushing the boundaries of agent capabilities. 
       </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -258,187 +164,166 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Powered by a large language model (LLM), a web browsing agent operates web browsers in a human-like manner 
+            and offers a highly transparent path toward automating a wide range of everyday tasks. 
+            As web agents become increasingly capable and demonstrate proficiency in general browsing tasks, 
+            a critical question emerges: Can they go beyond general browsing to robustly handle tasks 
+            that are tedious and complex, or chores that humans often avoid doing themselves?
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            In this paper, we introduce WebChoreArena, a new fully reproducible benchmark comprising 532 
+            carefully curated tasks designed to extend the scope of WebArena beyond general browsing to 
+            more labor-intensive and tedious tasks. WebChoreArena systematically integrates three key challenges:
+            (i) Massive Memory tasks requiring accurate retrieval of large amounts of information in the observations, 
+            (ii) Calculation tasks demanding precise mathematical reasoning, and (iii) Long-Term Memory tasks 
+            necessitating long-term memory across multiple webpages. 
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Built on top of the fully reproducible and widely adopted four WebArena simulation environments, 
+            WebChoreArena ensures strict reproducibility and enables fair, direct comparisons with the established WebArena benchmark, 
+            offering key insights into agent progress. 
+          </p> 
+          <p>
+            Our experimental results demonstrate that as LLMs evolve, represented 
+            by GPT-4o, Claude 3.7 Sonnet, and Gemini 2.5 Pro, significant improvements in performance are observed on WebChoreArena. 
+            These findings suggest that WebChoreArena is well-suited to measure the advancement of state-of-the-art LLMs with greater clarity. 
+            Nevertheless, the results also indicate that even with Gemini 2.5 Pro, there remains substantial room for improvement compared 
+            to WebArena, highlighting the increased challenges posed by WebChoreArena.
+          </p>
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- Dataset Statistics. -->
+      <div class="column">
+        <div class="content has-text-left">
+          <h2 class="title is-3 has-text-centered">Dataset Statistics</h2>
+
+          <!-- First image and caption -->
+          <h3 class="title is-4 has-text-centered" style="margin-top: 0.5rem; margin-bottom: 2.0rem;">
+            Distribution of websites and task types
+          </h3>
+          <p>
+            WebChoreArena includes a total of 532 human-curated tasks. These consist of 117 tasks for Shopping, 132 for Shopping Admin, 91 for Reddit, 127 for GitLab, and 65 Cross-site tasks that span multiple platforms.
+          </p>
+          <p>
+            All tasks can be categorized into four types based on their reasoning requirements: Massive Memory tasks, Calculation tasks, Long-Term Memory tasks, and Others.
+          </p>
+          
+          <img src="./static/images/task_distribution.png" alt="Task Distribution" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
+
+          <!-- Second image and caption -->
+          <h3 class="title is-4 has-text-centered" style="margin-top: 0.5rem; margin-bottom: 2.0rem;">
+            Example of Each Task Type
+          </h3>
+          (i) Massive Memory tasks require accurately memorizing a large amount of information from the given page. (ii) Calculation tasks
+          involve performing arithmetic operations. (iii) Long-Term Memory tasks require the agent to retain
+          relevant information across many steps and interactions. (iv) Others involve tasks that require special
+          or domain-specific operations.
+          <img src="./static/images/task_type.png" alt="Task Type Breakdown" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
+      <!-- Benchmark Construction. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3 has-text-centered">Benchmark Construction</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+          We assigned three annotators (selected from the authors) to each of the four simulated websites. To ensure consistency in task quality across different websites, one annotator was assigned to all four websites. 
+          In total, ten annotators were involved in the task creation process. This annotation process was both meticulous and labor-intensive, totaling over 300 hours.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
+          <p><strong>1. Emphasis on Memory-intensive Analytical Tasks.</strong></p>
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            We deliberately focused on collecting tasks that require memory—that is, tasks in which information from past observations is essential to reach the correct answer.
+            Such tasks are common in real-world scenarios but remain largely underrepresented in existing benchmarks such as WebArena.
           </p>
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+            To avoid overly simplistic tasks, we first prototyped early task ideas and evaluated them using a Claude-based agent to identify model limitations and refine the task designs.
+            This process ensured that our final tasks were both meaningful and appropriately challenging.
+          </p>
+
+          <p><strong>2. Reducing Ambiguity in Task Specification and Evaluation.</strong></p>
+          <p>
+            We explicitly instructed annotators to eliminate ambiguity in both task descriptions and evaluation criteria.
+            While handling ambiguous instructions is important for agents aiming to operate flexibly in real-world human interactions, we prioritized clear evaluability, since reliable evaluation is essential for measuring progress.
           </p>
           <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
+            In WebArena, vague instructions often lead to scenarios where agents produce reasonable answers that are incorrectly marked as failures.
+            In addition, we observed that the evaluation protocol in WebArena can fail to reliably assess answers due to vague output format expectations.
+            To mitigate ambiguity in answer evaluation, we standardized the required output formats, <em>e.g.,</em> <em>"Provide only the answer without any additional words."</em>, when aiming for exact matching with the ground truth.
+          </p>
+
+          <p><strong>3. Template-based Task Construction and Extension.</strong></p>
+          <p>
+            Following WebArena, we instructed annotators to create task templates and extend them to several task instances.
+            The annotators were also responsible for developing several instantiations for each variable.
+            This templated design enables a more robust and systematic evaluation of agent performance across tasks that share semantic similarity but exhibit diverse execution traces.
           </p>
           <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            We created a total of 117 task templates: 25 for Shopping, 29 for Shopping Admin, 20 for Reddit, 28 for GitLab, and 15 for Cross-site tasks. 
+            On average, each template yielded approximately 4.5 task instances. Here, WebArena includes several tasks based on the map website (OpenStreetMap). 
           </p>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- Dataset Statistics. -->
+      <div class="column">
+        <div class="content has-text-centered">
+          <h2 class="title is-3">Experimental Results</h2>
+          <p>
+            The following figures illustrate the overall and task type-wise results on WebChoreArena.
+          </p>
+
+          <!-- First image and caption -->
+          <h3 class="title is-4" style="margin-top: 0.1rem; margin-bottom: 0.3rem;">Overall Results</h3>
+          <img src="./static/images/main_results.png" alt="Overall Results" style="max-width: 100%; height: auto; margin-bottom: 0.3rem;">
+
+          <!-- Second image and caption -->
+          <h3 class="title is-4" style="margin-top: 0.1rem; margin-bottom: 0.1rem;">Results per Task Type</h3>
+          <img src="./static/images/results_per_task.png" alt="Results per Task Type" style="max-width: 100%; height: auto; margin-bottom: 0.3rem;">
+
+          <div class="content has-text-left">
+            <h4 class="title is-5">F1: GPT-4o Struggles Significantly on WebChoreArena.</h4>
+            <p>
+            It is evident that <strong>GPT-4o struggles significantly on WebChoreArena</strong>. This indicates that WebChoreArena is <strong>significantly more challenging</strong> than WebArena, emphasizing the need for more advanced LLMs to tackle these tasks.</p>
+            <h4 class="title is-5">F2: Latest LLMs Show Progress but Have Significant Room for Improvement.</h4>
+            As LLMs have evolved with models such as <strong>Claude 3.7 Sonnet</strong> and <strong>Gemini 2.5 Pro</strong>, their performance in WebChoreArena demonstrates improvements, but <strong>there remains significant room for further advancement</strong>.</p>
+            <h4 class="title is-5">F3: WebChoreArena Enables a Clearer and Deeper Measurement of the Performance Differences among the Models.</h4>
+            <p>WebChoreArena serves as a <strong>more effective benchmark</strong> for distinguishing model performance. Unlike WebArena, which presents a <strong>narrower performance spectrum</strong>, WebChoreArena exposes a <strong>substantial performance divergence</strong>. Therefore, WebChoreArena provides model developers and evaluators with <strong>clear insights into the strengths and weaknesses</strong> of each model.</p>
+            <h4 class="title is-5">F4: WebChoreArena Enables Fine-grained Analysis of Task-specific Performance.</h4>
+            Fig. 4 presents a <strong>detailed analysis</strong> of each agent’s performance across diverse task typologies. The results underscore the <strong>significant influence of agent architecture</strong>, beyond the type of LLMs, on type-wise performance.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 <section class="section" id="BibTeX">
